@@ -1,2 +1,2 @@
-#!/bin/bash
-tr /tmp/u ...
+#!/bin/bash 
+[[:upper:]] /tmp/u
