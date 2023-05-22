@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #i hate you 
 
+trap "echo Y u no love me?" SIGINT
 trap "echo i hate the kill command; rm/var/run/myscript.pid; exit" SI
 GQUIT SIGTERM
 1=1
@@ -9,6 +10,7 @@ do
         if [ "$i" -eq 1 ]
         then
                 echo -e '#!/usr/bin/env bash\npgrep -f myscripts.pid'
+-1' > /var/run/myscript.pid		
         fi
         if [ "$i" -eq 2 ]
         then 
@@ -16,5 +18,5 @@ do
         fi
         echo "To infinty and beyond"
         i=$((i+1))
-        sleep
+        sleep 2
 done 
