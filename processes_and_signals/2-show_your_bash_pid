@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Displays lines contain
+
+ps -auxf | grep bash
