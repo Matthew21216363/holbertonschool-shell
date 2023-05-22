@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+#Displays to infinity and beyond indefinitley
+
 trap "echo I am invincible!!!" SIGTERM
 x=1
 while [ "$x" -gt 0 ]
