@@ -1,22 +1,21 @@
 #!/usr/bin/env bash
 #i hate you 
+trap "echo Y U  no love me?" SIGINT
+trap "echo i hate the kill command; rm /var/run/myscript.pid; exit" SIGQUIT SIGTERM
 
-trap "echo Y u no love me?" SIGINT
-trap "echo i hate the kill command; rm/var/run/myscript.pid; exit" SI
-GQUIT SIGTERM
-1=1
+i=1
 while [ "$i" -gt 0 ]
 do
         if [ "$i" -eq 1 ]
         then
-                echo -e '#!/usr/bin/env bash\npgrep -f myscripts.pid'
+                echo -e '#!/usr/bin/env bash\npgrep -f myscripts.pid
 -1' > /var/run/myscript.pid		
         fi
         if [ "$i" -eq 2 ]
         then 
                chmod u+x /var/run/myscript.pid
         fi
-        echo "To infinty and beyond"
+        echo "To infinity and beyond"
         i=$((i+1))
         sleep 2
 done 
