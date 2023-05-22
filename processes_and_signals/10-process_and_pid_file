@@ -10,7 +10,7 @@ do
         then
                 echo -e '#!/usr/bin/env bash\npgrep -f myscripts.pid'
         fi
-        if ["$i" -eq 2 ]
+        if [ "$i" -eq 2 ]
         then 
                chmod u+x /var/run/myscript.pid
         fi
